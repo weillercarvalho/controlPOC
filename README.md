@@ -1,6 +1,7 @@
 # Parking Control POC/API
 
-![Captura de tela de 2022-08-27 20-34-04](https://user-images.githubusercontent.com/99501431/187051551-de84b6aa-e26f-4a58-9bdf-d354b298ba07.png)
+![Java_Projects_for_Beginners](https://github.com/weillercarvalho/POO-Java/assets/99501431/885564b4-a37f-4291-aad4-6bd7bc1984d1)
+
 
 Parking Control API for some tests with JWT and some hashings. 
 
