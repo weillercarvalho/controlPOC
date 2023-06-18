@@ -14,6 +14,17 @@ import java.util.UUID;
 @NoArgsConstructor
 @Table(name = "TB_PARKING")
 public class ParkingModel {
+    public ParkingModel(String parkingSpotNumber, String licensePlateCar, String brandCar, String modelCar, String colorCar, String responsibleName, String apartment, String block, String password) {
+        this.hashPassword = password;
+        this. parkingSpotNumber = parkingSpotNumber;
+        this.licensePlateCar = licensePlateCar;
+        this.brandCar = brandCar;
+        this.modelCar = modelCar;
+        this.colorCar = colorCar;
+        this.responsibleName = responsibleName;
+        this.apartment = apartment;
+        this.block = block;
+    }
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
@@ -30,11 +41,12 @@ public class ParkingModel {
     @Column(nullable = false)
     private LocalDateTime registrationDate;
     @Column(nullable = false)
-    private String responsibleNAme;
+    private String responsibleName;
     @Column(nullable = false)
     private String apartment;
     @Column(nullable = false)
     private String block;
-
+    @Column(nullable = false)
+    private String hashPassword;
 
 }
